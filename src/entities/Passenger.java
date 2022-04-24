@@ -12,6 +12,27 @@ public class Passenger extends User {
 		this.nationality=nationality;
 		
 	}
+	
+
+	public Passenger(String email, String password, String role, String firstName, String lastName) {
+		super(email, password, role, firstName, lastName);
+	}
+
+
+	public Passenger() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Passenger(int id , String passeportNumber,String gender,String nationality,String email, String password, String role, String firstName, String lastName) {
+		super(email, password, role, firstName, lastName);
+		this.passeportNumber=passeportNumber;
+		this.gender=gender;
+		this.nationality=nationality;
+		
+	}
+
 
 	public String getPasseportNumber() {
 		return passeportNumber;

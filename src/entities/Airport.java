@@ -10,6 +10,17 @@ public class Airport implements Comparable <Airport>{
 		this.airportName = airportName;
 		this.country = country;
 	}
+	
+	public Airport(int airportCode, String airportName, String country) {
+		super();
+		this.airportCode = airportCode;
+		this.airportName = airportName;
+		this.country = country;
+	}
+
+	public Airport() {
+		
+	}
 	public int getAirportCode() {
 		return airportCode;
 	}

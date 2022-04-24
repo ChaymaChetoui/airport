@@ -74,6 +74,33 @@ public class Flight {
 	public void setArrivalAirport(Airport arrivalAirport) {
 		this.arrivalAirport = arrivalAirport;
 	}
+
+	public Flight(Time departureTime, Time arrivalTime, double economyPrice, double businessPrice,
+			Airport departureAirport, Airport arrivalAirport) {
+		super();
+		this.departureTime = departureTime;
+		this.arrivalTime = arrivalTime;
+		this.economyPrice = economyPrice;
+		this.businessPrice = businessPrice;
+		this.departureAirport = departureAirport;
+		this.arrivalAirport = arrivalAirport;
+	}
+
+	public Flight(int flightNumber, Time departureTime, Time arrivalTime, double economyPrice, double businessPrice,
+			Airport departureAirport, Airport arrivalAirport) {
+		super();
+		this.flightNumber = flightNumber;
+		this.departureTime = departureTime;
+		this.arrivalTime = arrivalTime;
+		this.economyPrice = economyPrice;
+		this.businessPrice = businessPrice;
+		this.departureAirport = departureAirport;
+		this.arrivalAirport = arrivalAirport;
+	}
+
+	public Flight() {
+		super();
+	}
 	
 	
 }
